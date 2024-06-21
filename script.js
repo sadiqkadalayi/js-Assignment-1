@@ -92,6 +92,6 @@ function sumOfOddNumbers(limit) {
   const limit = 10;
 
   const result1 = sumOfOddNumbers(limit);
-  console.log("The sum from 1 to", limit, "is:", result1);
+  console.log("The sum of odd numbers from 1 to", limit, "=", result1 , "/-");
 
 
