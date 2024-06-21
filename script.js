@@ -66,16 +66,16 @@ else{
 
 // find the square of each number in an array=[1,3,9,12,15,18,21] using loop.
 
-const numbers = [1, 3, 9, 12, 15, 18, 21];
+const Arr = [1, 3, 9, 12, 15, 18, 21];
 
-let squaredNumbers = [];
-for (let i = 0; i < numbers.length; i++) {
-  const number = numbers[i];
-  const squaredNumber = number * number;
-  squaredNumbers.push(squaredNumber);
+let res = [];
+for (let i = 0; i < Arr.length; i++) {
+  const number = Arr[i];
+  const squar = number * number;
+  res.push(squar);
 }
 
-console.log(squaredNumbers); 
+console.log(res); 
 
 // Write a program to find the sum of all the odd numbers for a given limit (if you choose limit as 10 then need to find the sum of all odd numbers in between 1 and 10 )
 
@@ -83,8 +83,8 @@ function sumOfOddNumbers(limit) {
    
     let sum = 0;
 
-    for (let i = 1; i <= limit; i += 2) {
-      sum += i;
+    for (let i = 1; i <= limit; i= i+ 2) {
+      sum =sum+ i;
     }
     return sum;
   }
@@ -92,6 +92,6 @@ function sumOfOddNumbers(limit) {
   const limit = 10;
 
   const result1 = sumOfOddNumbers(limit);
-  console.log("The sum of all odd numbers from 1 to", limit, "is:", result1);
+  console.log("The sum from 1 to", limit, "is:", result1);
 
 
